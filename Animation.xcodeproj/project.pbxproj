@@ -13,6 +13,10 @@
 		73A5EBD81BA9E2D600B5A3D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73A5EBD71BA9E2D600B5A3D5 /* Images.xcassets */; };
 		73A5EBDB1BA9E2D600B5A3D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73A5EBD91BA9E2D600B5A3D5 /* LaunchScreen.xib */; };
 		73A5EBE71BA9E2D600B5A3D5 /* AnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A5EBE61BA9E2D600B5A3D5 /* AnimationTests.swift */; };
+		73FD7BBA1BA9E99B0036CA9A /* frame1.png in Resources */ = {isa = PBXBuildFile; fileRef = 73FD7BB61BA9E99B0036CA9A /* frame1.png */; };
+		73FD7BBB1BA9E99B0036CA9A /* frame2.png in Resources */ = {isa = PBXBuildFile; fileRef = 73FD7BB71BA9E99B0036CA9A /* frame2.png */; };
+		73FD7BBC1BA9E99B0036CA9A /* frame3.png in Resources */ = {isa = PBXBuildFile; fileRef = 73FD7BB81BA9E99B0036CA9A /* frame3.png */; };
+		73FD7BBD1BA9E99B0036CA9A /* frame4.png in Resources */ = {isa = PBXBuildFile; fileRef = 73FD7BB91BA9E99B0036CA9A /* frame4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		73A5EBE01BA9E2D600B5A3D5 /* AnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A5EBE51BA9E2D600B5A3D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73A5EBE61BA9E2D600B5A3D5 /* AnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTests.swift; sourceTree = "<group>"; };
+		73FD7BB61BA9E99B0036CA9A /* frame1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame1.png; sourceTree = "<group>"; };
+		73FD7BB71BA9E99B0036CA9A /* frame2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame2.png; sourceTree = "<group>"; };
+		73FD7BB81BA9E99B0036CA9A /* frame3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame3.png; sourceTree = "<group>"; };
+		73FD7BB91BA9E99B0036CA9A /* frame4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,10 @@
 				73A5EBD01BA9E2D600B5A3D5 /* AppDelegate.swift */,
 				73A5EBD21BA9E2D600B5A3D5 /* ViewController.swift */,
 				73A5EBD41BA9E2D600B5A3D5 /* Main.storyboard */,
+				73FD7BB61BA9E99B0036CA9A /* frame1.png */,
+				73FD7BB71BA9E99B0036CA9A /* frame2.png */,
+				73FD7BB81BA9E99B0036CA9A /* frame3.png */,
+				73FD7BB91BA9E99B0036CA9A /* frame4.png */,
 				73A5EBD71BA9E2D600B5A3D5 /* Images.xcassets */,
 				73A5EBD91BA9E2D600B5A3D5 /* LaunchScreen.xib */,
 				73A5EBCE1BA9E2D600B5A3D5 /* Supporting Files */,
@@ -192,7 +204,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73FD7BBB1BA9E99B0036CA9A /* frame2.png in Resources */,
+				73FD7BBC1BA9E99B0036CA9A /* frame3.png in Resources */,
+				73FD7BBD1BA9E99B0036CA9A /* frame4.png in Resources */,
 				73A5EBD61BA9E2D600B5A3D5 /* Main.storyboard in Resources */,
+				73FD7BBA1BA9E99B0036CA9A /* frame1.png in Resources */,
 				73A5EBDB1BA9E2D600B5A3D5 /* LaunchScreen.xib in Resources */,
 				73A5EBD81BA9E2D600B5A3D5 /* Images.xcassets in Resources */,
 			);
@@ -340,9 +356,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Animation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -350,9 +369,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Animation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -409,6 +431,7 @@
 				73A5EBEC1BA9E2D600B5A3D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73A5EBED1BA9E2D600B5A3D5 /* Build configuration list for PBXNativeTarget "AnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +440,7 @@
 				73A5EBEF1BA9E2D600B5A3D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
